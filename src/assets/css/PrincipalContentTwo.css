@@ -1,3 +1,37 @@
 .bg-waves {
   background-image: url(../img/bg_section.svg);
 }
+
+.container-imgAR {
+  position: relative;
+
+
+}
+
+.container-imgAR .box {
+  position: relative;
+  width: 30%;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container-imgAR .box img {
+
+  position: absolute;
+  bottom: 0;
+  height: 90%;
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  -moz-transition: height 0.5s;
+  -ms-transition: height 0.5s;
+  -o-transition: height 0.5s;
+}
+
+.container-imgAR .box:hover img {
+  height: 480px;
+}
