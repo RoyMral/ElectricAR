@@ -6,7 +6,7 @@ import repairVehicle from "../assets/img/ev_repair_vehicle_car_electric2.svg";
 
 function PrincipalContentOne() {
   return (
-    <section className="flex flex-col mt-[30px] sm:flex-row sm:mt-[30px] md:mt-[63px] lg:justify-center">
+    <section className="flex flex-col mx-auto mt-[30px] sm:flex-row sm:mt-[30px] sm:w-[640px] md:w-[768px] lg:w-[1024px] md:mt-[63px] sm:justify-center">
       <div>
         <svg
           className="mx-auto sm:w-[262px] md:w-[292px] lg:w-[392px]"
