@@ -6,7 +6,7 @@ import "../assets/css/PrincipalContentTwo.css";
 function PrincipalContentTwo() {
   return (
     <section className="bg-waves mx-auto pt-[10px] bg-auto bg-no-repeat sm:pt-[30px] md:pt-[10px] lg:pt-[0px] lg:bg-center h-fit pb-[30px] lg:pb-[20px] sm:w-[640px] md:w-[768px] lg:w-[1024px]">
-      <h2 className="mt-[100px] font-bold text-[40px] text-black text-center">
+      <h2 className="mt-[100px] font-bold text-[40px] text-teal-500 sm:text-black text-center">
         ¿Realidad Aumentada?
       </h2>
       <div className="container-imgAR mx-auto my-[40px] flex justify-center gap-[20px] h-[120px] sm:h-[180px] md:h-[230px] lg:h-[230px] lg:w-[1024px]">
