@@ -1,4 +1,4 @@
-header {
+.header-secondary {
   background-image: url("../img/headersecondary/bg-header-about.jpg");
 
   background-position: center;
@@ -7,7 +7,7 @@ header {
   position: relative;
 }
 
-header::before {
+.header-secondary::before {
   content: "";
   position: absolute;
   top: 0;

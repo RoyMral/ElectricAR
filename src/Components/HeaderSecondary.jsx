@@ -1,9 +1,9 @@
 import NavBar from "./NavBar";
 import "../assets/css/HeaderSecondary.css";
 
-function Header() {
+function HeaderSecondary() {
   return (
-    <header className="border text-white mx-auto sm:w-[640px] md:w-[768px] lg:w-[1024px]">
+    <header className="header-secondary border text-white mx-auto sm:w-[640px] md:w-[768px] lg:w-[1024px]">
       <div className="nav-bar">
         <NavBar></NavBar>
       </div>
@@ -14,4 +14,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default HeaderSecondary;

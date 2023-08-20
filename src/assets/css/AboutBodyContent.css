@@ -1,0 +1,10 @@
+.section-about {
+  background-image: url(../img/about/bg-body-about-sin.png);
+  background-size: cover;
+
+  background-repeat: no-repeat;
+
+  /* background: linear-gradient(0deg, rgba(179, 233, 227, 0.30) 0%, rgba(179, 233, 227, 0.30) 100%), url(../img/about/bg-body-about.png), lightgray 50% / cover no-repeat;
+  stroke-width: 1px;
+  stroke: #000; */
+}

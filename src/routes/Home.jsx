@@ -5,7 +5,7 @@ import Footer from "../Components/Footer";
 import "../assets/css/Principal.css";
 
 function Home() {
-  console.log(location.href != "/");
+  console.log(location.href);
   return (
     <div className="bg-content">
       {location.href != "/" && (
