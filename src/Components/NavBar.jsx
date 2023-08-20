@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import electricar_icon from "../assets/img/electricar_icon.svg";
 import hamburguer from "../assets/img/hamburguer.svg";
 
@@ -9,7 +10,7 @@ function NavBar() {
 
   return (
     <nav className="bg-[#0F4072] text-white mx-auto mt-[32px] flex flex-wrap justify-around items-center rounded sm:flex sm:w-[560px] sm:py-0 md:w-[704px] md:justify-around md:py-[15px] lg:w-[960px] lg:justify-around">
-      <a href="./index.html">
+      <Link to="/">
         <div className="flex items-center flex-shrink-0">
           <img
             className="fill-current mr-2 sm:ml-3 w-[48px] sm:w-[48px] md:w-[68px] lg:w-[78px]"
@@ -20,7 +21,7 @@ function NavBar() {
             ElectricAR
           </span>
         </div>
-      </a>
+      </Link>
       {/* <!-- Hamburguesa responsive --> */}
       <div className="block sm:hidden">
         <button
@@ -33,44 +34,44 @@ function NavBar() {
       {/* <!-- Hamburguesa FIN --> */}
       <ul className="font-bold ml-[30px] w-[100%] md:w-[70%] sm:ml-[0px] sm:text-center sm:text-sm sm:flex sm:justify-between sm:items-center lg:text-base hidden menu">
         <li className="">
-          <a
+          <Link
+            to="/"
             className="inline-block w-full p-4 sm:p-3 md:p-3 lg:p-5 hover:text-[#00B5A1] hover:cursor-pointer"
-            href="./index.html"
           >
             Inicio
-          </a>
+          </Link>
         </li>
         <li>
-          <a
+          <Link
+            to="/tiposdeenergía"
             className="inline-block w-full p-4 sm:p-3 md:p-3 lg:p-5 hover:text-[#00B5A1] hover:cursor-pointer"
-            href="./pages/tiposenergia.html"
           >
             Tipos de Energía
-          </a>
+          </Link>
         </li>
         <li>
-          <a
+          <Link
+            to="/galeria"
             className="inline-block w-full p-4 sm:p-3 md:p-3 lg:p-5 hover:text-[#00B5A1] hover:cursor-pointer"
-            href="./pages/gallery.html"
           >
             Galería
-          </a>
+          </Link>
         </li>
         <li>
-          <a
+          <Link
+            to="/recursos"
             className="inline-block w-full p-4 sm:p-3 md:p-3 lg:p-5 hover:text-[#00B5A1] hover:cursor-pointer"
-            href="./pages/recursos.html"
           >
             Recursos
-          </a>
+          </Link>
         </li>
         <li>
-          <a
+          <Link
+            to="/about"
             className="inline-block w-full p-4 sm:p-3 md:p-3 lg:p-5 hover:text-[#00B5A1] hover:cursor-pointer"
-            href="./pages/about.html"
           >
             Sobre el proyecto
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>

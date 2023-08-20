@@ -1,0 +1,30 @@
+header {
+  background-image: url("../img/headersecondary/bg-header-about.jpg");
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(15, 64, 114, 0.6)
+}
+
+.nav-bar {
+  position: relative;
+  border-radius: 5px;
+  margin: 0 auto;
+
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
