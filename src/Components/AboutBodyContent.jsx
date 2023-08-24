@@ -8,8 +8,8 @@ function AboutBodyContent() {
           TFG UNED 2023
         </h2>
         <p className="w-[95%] mb-4  mx-auto sm:w-[80%] sm:text-sm sm:mb-5 md:mb-0 md:text-lg">
-          Iniciativa educativa en línea: "Descubriendo la Energía Eléctrica con
-          Realidad Aumentada"! Este proyecto representa el resultado de un arduo
+          Iniciativa educativa en línea: "¡Descubriendo la Energía Eléctrica con
+          Realidad Aumentada!" Este proyecto representa el resultado de un arduo
           esfuerzo y dedicación, nacido como un trabajo final de graduación de
           un equipo apegado a la educación y la tecnología. Nuestro objetivo
           principal es llevar el aprendizaje a nuevas dimensiones, y qué mejor
