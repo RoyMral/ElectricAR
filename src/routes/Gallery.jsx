@@ -9,7 +9,7 @@ import geoLaspailasII from "../assets/img/gallery/geo-laspailasII.webp";
 import toro3 from "../assets/img/gallery/hidroelectrica-toro3.jpg";
 import represa from "../assets/img/gallery/represa.jpg";
 import solarUno from "../assets/img/gallery/solar1.webp";
-import bgGroupOne from "../assets/img/gallery/bg-groupone.jpg";
+import bgGroupOne from "../assets/img/gallery/bg-groupone.webp";
 
 function Gallery() {
   let titulo = "Galería";
