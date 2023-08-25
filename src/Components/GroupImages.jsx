@@ -8,8 +8,8 @@ function GroupImages({ arImages }) {
   return (
     <>
       <div
-        // style={{ backgroundImage: `url(${arImages[7]})` }}
-        className="bg-black overflow-x-hidden mt-12 mb-40 mx-auto sm:w-[640px] md:w-[768px] lg:w-[1024px]"
+        style={{ backgroundImage: `url(${arImages[7]})` }}
+        className="bg-center bg-cover bg-no-repeat pt-12 pb-40 mx-auto sm:w-[640px] md:w-[768px] lg:w-[1024px]"
       >
         <swiper-container
           effect={"coverflow"}
@@ -24,49 +24,49 @@ function GroupImages({ arImages }) {
         >
           <swiper-slide>
             <img
-              className="md:w-[300px] md:h-[300px]"
+              className="md:w-[300px] md:h-[300px] opacity-90"
               src={arImages[0]}
               alt="biomasa"
             />
           </swiper-slide>
           <swiper-slide>
             <img
-              className="md:w-[300px] md:h-[300px]"
+              className="md:w-[300px] md:h-[300px] opacity-90"
               src={arImages[1]}
               alt="eolica"
             />
           </swiper-slide>
           <swiper-slide>
             <img
-              className="md:w-[300px] md:h-[300px]"
+              className="md:w-[300px] md:h-[300px] opacity-90"
               src={arImages[2]}
               alt="eolica-solar"
             />
           </swiper-slide>
           <swiper-slide>
             <img
-              className="md:w-[300px] md:h-[300px]"
+              className="md:w-[300px] md:h-[300px] opacity-90"
               src={arImages[3]}
               alt="geotermica-laspailasII"
             />
           </swiper-slide>
           <swiper-slide>
             <img
-              className="md:w-[300px] md:h-[300px]"
+              className="md:w-[300px] md:h-[300px] opacity-90"
               src={arImages[4]}
               alt="hidro-toro3"
             />
           </swiper-slide>
           <swiper-slide>
             <img
-              className="md:w-[300px] md:h-[300px]"
+              className="md:w-[300px] md:h-[300px] opacity-90"
               src={arImages[5]}
               alt="represa"
             />
           </swiper-slide>
           <swiper-slide>
             <img
-              className="md:w-[300px] md:h-[300px]"
+              className="md:w-[300px] md:h-[300px] opacity-90"
               src={arImages[6]}
               alt="solarUno"
             />
