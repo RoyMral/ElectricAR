@@ -43,7 +43,7 @@ function NavBar() {
         </li>
         <li>
           <Link
-            to="/tiposdeenergía"
+            to="/tiposdeenergia"
             className="inline-block w-full p-4 sm:p-3 md:p-3 lg:p-5 hover:text-[#00B5A1] hover:cursor-pointer"
           >
             Tipos de Energía
