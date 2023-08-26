@@ -1,11 +1,9 @@
 import PropTypes from "prop-types";
 import { register } from "swiper/element/bundle";
 import "swiper/css";
-import "../assets/css/GroupImages.css";
 
 register();
 function GroupImages({ arImagesGroup }) {
-  console.log(arImagesGroup);
   return (
     <>
       <div
