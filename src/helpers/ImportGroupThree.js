@@ -6,7 +6,6 @@ import pacificoNorte from "../assets/img/gallery/groupthree/pacifico-norte.webp"
 import plantaGeo from "../assets/img/gallery/groupthree/planta-geo.webp";
 import rincon from "../assets/img/gallery/groupthree/rincon.jpeg";
 import volcan from "../assets/img/gallery/groupthree/volcan.jpg";
-import bgGroupThree from "../assets/img/gallery/groupthree/bg-groupthree.jpg";
 
 function ImportGroupThree() {
   let arImagesGroupThree = [
@@ -18,7 +17,6 @@ function ImportGroupThree() {
     plantaGeo,
     rincon,
     volcan,
-    bgGroupThree,
   ];
   return {
     arImagesGroupThree,
