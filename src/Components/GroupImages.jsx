@@ -4,11 +4,12 @@ import "swiper/css";
 import "../assets/css/GroupImages.css";
 
 register();
-function GroupImages({ arImages }) {
+function GroupImages({ arImagesGroup }) {
+  console.log(arImagesGroup);
   return (
     <>
       <div
-        style={{ backgroundImage: `url(${arImages[7]})` }}
+        style={{ backgroundImage: `url(${arImagesGroup[7]})` }}
         className="bg-center bg-cover bg-no-repeat pt-12 pb-40 mx-auto sm:w-[640px] md:w-[768px] lg:w-[1024px]"
       >
         <swiper-container
@@ -25,49 +26,49 @@ function GroupImages({ arImages }) {
           <swiper-slide>
             <img
               className="md:w-[300px] md:h-[300px] opacity-90"
-              src={arImages[0]}
+              src={arImagesGroup[0]}
               alt="biomasa"
             />
           </swiper-slide>
           <swiper-slide>
             <img
               className="md:w-[300px] md:h-[300px] opacity-90"
-              src={arImages[1]}
+              src={arImagesGroup[1]}
               alt="eolica"
             />
           </swiper-slide>
           <swiper-slide>
             <img
               className="md:w-[300px] md:h-[300px] opacity-90"
-              src={arImages[2]}
+              src={arImagesGroup[2]}
               alt="eolica-solar"
             />
           </swiper-slide>
           <swiper-slide>
             <img
               className="md:w-[300px] md:h-[300px] opacity-90"
-              src={arImages[3]}
+              src={arImagesGroup[3]}
               alt="geotermica-laspailasII"
             />
           </swiper-slide>
           <swiper-slide>
             <img
               className="md:w-[300px] md:h-[300px] opacity-90"
-              src={arImages[4]}
+              src={arImagesGroup[4]}
               alt="hidro-toro3"
             />
           </swiper-slide>
           <swiper-slide>
             <img
               className="md:w-[300px] md:h-[300px] opacity-90"
-              src={arImages[5]}
+              src={arImagesGroup[5]}
               alt="represa"
             />
           </swiper-slide>
           <swiper-slide>
             <img
               className="md:w-[300px] md:h-[300px] opacity-90"
-              src={arImages[6]}
+              src={arImagesGroup[6]}
               alt="solarUno"
             />
           </swiper-slide>
@@ -78,7 +79,7 @@ function GroupImages({ arImages }) {
 }
 
 GroupImages.propTypes = {
-  arImages: PropTypes.array,
+  arImagesGroup: PropTypes.array,
 };
 
 export default GroupImages;
