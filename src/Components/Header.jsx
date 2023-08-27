@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import NavBar from "./NavBar";
 
 function Header() {
@@ -10732,16 +10733,16 @@ function Header() {
       </div>
       {/* BOTONES CABECERA */}
       <div className="text-center font-bold ml-[0px] sm:mt-[10px] md:mt-[30px] mb-[30px] sm:ml-[60px] w-[100%] sm:w-[450px] h-[65px] flex justify-around">
-        <a href="./pages/gallery.html">
+        <Link to="/galeria">
           <button className="w-[163px] h-[65px] sm:w-[113px] sm:h-[50px] md:w-[163px] md:h-[65px] bg-[#00B5A1] border border-[#00B5A1] rounded hover:bg-[#0F4072] hover:border-none">
             GALERÍA
           </button>
-        </a>
-        <a href="./pages/about.html">
+        </Link>
+        <Link to="/about">
           <button className="w-[163px] h-[65px] sm:w-[113px] sm:h-[50px] md:w-[163px] md:h-[65px] text-[#00B5A1] border border-[#00B5A1] rounded hover:bg-[#00B5A1] hover:text-white">
             ABOUT
           </button>
-        </a>
+        </Link>
       </div>
       {/* FIN BOTONES CABECERA */}
     </header>
