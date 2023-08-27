@@ -8,7 +8,7 @@ function GroupImages({ arImagesGroup }) {
     <>
       <div
         style={{ backgroundImage: `url(${arImagesGroup[7]})` }}
-        className="bg-center bg-cover bg-no-repeat pt-12 pb-40 mx-auto h-[300px] md:h-full sm:w-[640px] md:w-[768px] lg:w-[1024px]"
+        className="bg-center bg-cover bg-no-repeat pt-12 pb-40 my-5 mx-auto h-[300px] md:h-full sm:w-[640px] md:w-[768px] lg:w-[1024px]"
       >
         <swiper-container
           effect={"coverflow"}
