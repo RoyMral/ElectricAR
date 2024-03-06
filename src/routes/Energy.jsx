@@ -1,11 +1,7 @@
-import InProgress from "../Components/InProgress";
+// import InProgress from "../Components/InProgress";
 
 function Energy() {
-  return (
-    <div>
-      <InProgress />
-    </div>
-  );
+  return <div></div>;
 }
 
 export default Energy;
