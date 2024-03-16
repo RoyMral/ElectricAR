@@ -1,11 +1,17 @@
 import { Link } from "react-router-dom";
 import electricar_icon from "../assets/img/electricar_icon.svg";
 import hamburguer from "../assets/img/hamburguer.svg";
+import TypesEnergy from "./TypesEnergy";
 
 function NavBar() {
   function handleMenu() {
     let $menu = document.querySelector(".menu");
     $menu.classList.toggle("hidden");
+  }
+
+  function handleMenuTypes() {
+    let $menuTypes = document.querySelector(".menuTypes");
+    $menuTypes.classList.toggle("hidden");
   }
 
   return (
@@ -43,11 +49,17 @@ function NavBar() {
         </li>
         <li>
           <Link
-            to="/tiposdeenergia"
+            // to="/tiposdeenergia"
             className="inline-block w-full p-4 sm:p-3 md:p-3 lg:p-5 hover:text-[#00B5A1] hover:cursor-pointer"
+            onClick={handleMenuTypes}
           >
             Tipos de Energía
           </Link>
+          {/* SUBMENÚ DE TIPOS DE ENERGÍA */}
+          <div className="menuTypes group-hover:block hidden">
+            <TypesEnergy />
+          </div>
+          {/* FIN SUBMENÚ DE TIPOS DE ENERGÍA */}
         </li>
         <li>
           <Link
