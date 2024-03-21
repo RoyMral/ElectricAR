@@ -9,6 +9,7 @@ import GeotermicaPage from "./routes/GeotermicaPage";
 import EolicaPage from "./routes/EolicaPage";
 import SolarPage from "./routes/SolarPage";
 import BiomasaPage from "./routes/BiomasaPage";
+import Eolica from "./Components/Model3D/Eolica";
 
 function App() {
   return (
@@ -29,6 +30,8 @@ function App() {
         <Route path="/tipoeolica" Component={EolicaPage}></Route>
         <Route path="/tiposolar" Component={SolarPage}></Route>
         <Route path="/tipobiomasa" Component={BiomasaPage}></Route>
+        {/* Rutas de Realidad Aumentada */}
+        <Route path="/tipoeolica/3deolicaone" Component={Eolica}></Route>
       </Routes>
     </>
   );
