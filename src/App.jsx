@@ -9,7 +9,7 @@ import GeotermicaPage from "./routes/GeotermicaPage";
 import EolicaPage from "./routes/EolicaPage";
 import SolarPage from "./routes/SolarPage";
 import BiomasaPage from "./routes/BiomasaPage";
-import Eolica from "./Components/Model3D/Eolica";
+import ARModel from "./Components/Model3D/ARModel";
 
 function App() {
   return (
@@ -31,7 +31,44 @@ function App() {
         <Route path="/tiposolar" Component={SolarPage}></Route>
         <Route path="/tipobiomasa" Component={BiomasaPage}></Route>
         {/* Rutas de Realidad Aumentada */}
-        <Route path="/tipoeolica/3deolicaone" Component={Eolica}></Route>
+        {/******************* EÓLICA **********************/}
+        <Route
+          path="/tipoeolica/3deolicaone"
+          element={
+            <ARModel
+              x2={60}
+              y2={90}
+              z2={-90}
+              scale={0.03}
+              pathModel="/src/assets/ar/eolica/eolica2/torre-eolica2.gltf"
+            />
+          }
+        ></Route>
+        {/******************* GEOTERMICA **********************/}
+        <Route
+          path="/tipogeotermica/3dgeotermicaone"
+          element={
+            <ARModel
+              x2={50}
+              y2={90}
+              z2={-90}
+              scale={1.5}
+              pathModel="/src/assets/ar/geotermica/geo2/geotermica2.gltf"
+            />
+          }
+        ></Route>
+        <Route
+          path="/tipogeotermica/3dgeotermicatwo"
+          element={
+            <ARModel
+              x2={50}
+              y2={90}
+              z2={-90}
+              scale={0.09}
+              pathModel="/src/assets/ar/geotermica/geo3/geotermica3.gltf"
+            />
+          }
+        ></Route>
       </Routes>
     </>
   );

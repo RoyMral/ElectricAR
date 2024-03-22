@@ -18,7 +18,7 @@ function ModelContent(props) {
       <div className="mt-4">
         <img src={props.imageEnergyOne} alt="" />
       </div>
-      <p>{props.texto}</p>
+      <p className="text-left w-[80%]">{props.texto}</p>
       <div>
         <button
           className="font-bold text-2xl bg-[#00B5A1] px-5 py-3 my-3 rounded-xl text-white hover:bg-[rgb(0,181,161,0.8)]"

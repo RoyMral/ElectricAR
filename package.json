@@ -10,12 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "draco3d": "^1.5.7",
     "got": "^14.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-modal": "^3.16.1",
     "react-router-dom": "^6.15.0",
-    "swiper": "^10.2.0"
+    "swiper": "^10.2.0",
+    "three": "^0.162.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
