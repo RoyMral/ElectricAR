@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ModalQr from "./ModalQr";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 function ModelContent(props) {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -53,7 +54,8 @@ function ModelContent(props) {
               puedas ver este modelo en tu espacio utilizando realidad
               aumentada.
             </p>
-            <a href="/tipogeotermica/3dgeotermicaone">CLICK</a>
+            <Link to={"/tipogeotermica/3dgeotermicaone"}>CLICK</Link>
+
             <button
               onClick={closeModal}
               className="px-6 py-2 bg-[#0F4072] text-white hover:bg-[#264967] transition-all"
