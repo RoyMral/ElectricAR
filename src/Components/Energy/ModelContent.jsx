@@ -1,7 +1,7 @@
 import { useState } from "react";
 import ModalQr from "./ModalQr";
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import QRCode from "qrcode.react";
 
 function ModelContent(props) {
@@ -14,6 +14,9 @@ function ModelContent(props) {
   function closeModal() {
     setModalIsOpen(false);
   }
+
+  const navigate = useNavigate();
+  const handleQRClick = () => navigate("/tipogeotermica/3dgeotermicaone");
 
   return (
     <div className="mx-auto sm:w-[640px] md:w-[768px] lg:w-[1024px] sm:flex sm:flex-col sm:justify-center sm:items-center">
@@ -55,9 +58,14 @@ function ModelContent(props) {
               puedas ver este modelo en tu espacio utilizando realidad
               aumentada.
             </p>
-            <Link to={"/tipogeotermica/3dgeotermicaone"}>CLICKKKK</Link>
+
             <div>
-              <QRCode value="https://electricar-page.netlify.app//tipogeotermica/3dgeotermicaone" />
+              <Link to={"/tipogeotermica/3dgeotermicaone"}>
+                <QRCode
+                  value={`https://electricar-page.netlify.app/tipogeotermica/3dgeotermicaone`}
+                  // onClick={handleQRClick}
+                />
+              </Link>
             </div>
 
             <button
