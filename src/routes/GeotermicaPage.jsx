@@ -6,6 +6,7 @@ import Subtitles from "../Components/Subtitles";
 import ModelContent from "../Components/Energy/ModelContent";
 import image from "../assets/img/headersecondary/bg-header-gertermic.jpg";
 import ImagesGeotermic from "../helpers/ImagesGeotermic";
+import CardData from "../Components/Energy/CardData";
 
 function GeotermicaPage() {
   const title = "Energía Geotérmica";
@@ -29,6 +30,19 @@ function GeotermicaPage() {
       />
       <div className="mx-auto sm:w-[640px] md:w-[768px] lg:w-[1024px] text-white bg-[rgba(15,64,114,0.8)] text-lg">
         <p>{textos.geotermicInfoTwo}</p>
+      </div>
+      <Subtitles title="Impactos de la Energía Geotérmica" />
+      <div className="flex w-[66.7%] m-auto">
+        <CardData
+          title="Socioeconómico"
+          text={textos.cardGeotermicOne}
+          pathImg={arImagesGeotermic[2]}
+        />
+        <CardData
+          title="Medioambiental"
+          text={textos.cardGeotermicTwo}
+          pathImg={arImagesGeotermic[3]}
+        />
       </div>
       <Footer />
     </>

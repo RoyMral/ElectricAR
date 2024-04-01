@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
-function Eolica({ x2, y2, z2, scale, pathModel }) {
+function ARModel({ values, pathModel }) {
+  const { x2, y2, z2, scale } = values;
   const initialState = x2;
   const [rotate, setRotate] = useState(initialState);
 
@@ -35,12 +36,9 @@ function Eolica({ x2, y2, z2, scale, pathModel }) {
   );
 }
 
-Eolica.propTypes = {
-  x2: PropTypes.number.isRequired,
-  y2: PropTypes.number.isRequired,
-  z2: PropTypes.number.isRequired,
-  scale: PropTypes.number.isRequired,
+ARModel.propTypes = {
+  values: PropTypes.object.isRequired,
   pathModel: PropTypes.string.isRequired,
 };
 
-export default Eolica;
+export default ARModel;

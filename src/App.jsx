@@ -36,23 +36,17 @@ function App() {
           path="/tipoeolica/3deolicaone"
           element={
             <ARModel
-              x2={60}
-              y2={90}
-              z2={-90}
-              scale={0.03}
+              values={{ x2: 60, y2: 90, z2: -90, scale: 0.03 }}
               pathModel="/src/assets/ar/eolica/eolica2/torre-eolica2.gltf"
             />
           }
         ></Route>
-        {/******************* GEOTERMICA **********************/}
+        ****************** GEOTERMICA *********************
         <Route
           path="/tipogeotermica/3dgeotermicaone"
           element={
             <ARModel
-              x2={50}
-              y2={90}
-              z2={-90}
-              scale={1.5}
+              values={{ x2: 50, y2: 90, z2: -90, scale: 1.5 }}
               pathModel="/src/assets/ar/geotermica/geo2/geotermica2.gltf"
             />
           }
@@ -61,11 +55,28 @@ function App() {
           path="/tipogeotermica/3dgeotermicatwo"
           element={
             <ARModel
-              x2={50}
-              y2={90}
-              z2={-90}
-              scale={0.09}
+              values={{ x2: 50, y2: 90, z2: -90, scale: 0.09 }}
               pathModel="/src/assets/ar/geotermica/geo3/geotermica3.gltf"
+            />
+          }
+        ></Route>
+        {/******************* SOLAR **********************/}
+        <Route
+          path="/tiposolar/3dsolarone"
+          element={
+            <ARModel
+              values={{ x2: 50, y2: 90, z2: -90, scale: 1 }}
+              pathModel="/src/assets/ar/solar/solar2/solar2.gltf"
+            />
+          }
+        ></Route>
+        {/******************* HIDROELÉCTRICA **********************/}
+        <Route
+          path="/tipohidro/3dhidroone"
+          element={
+            <ARModel
+              values={{ x2: 50, y2: 90, z2: -90, scale: 1 }}
+              pathModel="/src/assets/ar/hidro/scene.gltf"
             />
           }
         ></Route>
