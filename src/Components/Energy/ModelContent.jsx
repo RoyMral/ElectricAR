@@ -53,6 +53,7 @@ function ModelContent(props) {
               puedas ver este modelo en tu espacio utilizando realidad
               aumentada.
             </p>
+            <a href="/tipogeotermica/3dgeotermicaone">CLICK</a>
             <button
               onClick={closeModal}
               className="px-6 py-2 bg-[#0F4072] text-white hover:bg-[#264967] transition-all"
