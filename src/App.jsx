@@ -47,7 +47,7 @@ function App() {
           element={
             <ARModel
               values={{ x2: 50, y2: 90, z2: -90, scale: 1.5 }}
-              pathModel="/src/assets/ar/geotermica/geo2/geotermica2.gltf"
+              pathModel="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
             />
           }
         ></Route>
