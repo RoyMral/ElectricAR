@@ -16,7 +16,7 @@ function ARModel({ values, pathModel }) {
 
   return (
     <div style={{ margin: "0 auto" }}>
-      <a-scene arjs="sourceType: webcam;">
+      <a-scene embedded arjs="sourceType: webcam;">
         <a-marker preset="hiro">
           <a-entity
             position="-1 0 1"
