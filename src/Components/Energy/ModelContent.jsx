@@ -15,8 +15,8 @@ function ModelContent(props) {
     setModalIsOpen(false);
   }
 
-  const navigate = useNavigate();
-  const handleQRClick = () => navigate("/tipogeotermica/3dgeotermicaone");
+  // const navigate = useNavigate();
+  // const handleQRClick = () => navigate("/tipogeotermica/3dgeotermicaone");
 
   return (
     <div className="mx-auto sm:w-[640px] md:w-[768px] lg:w-[1024px] sm:flex sm:flex-col sm:justify-center sm:items-center">
@@ -66,6 +66,7 @@ function ModelContent(props) {
                   // onClick={handleQRClick}
                 />
               </Link>
+              <Link to={"/tipogeotermica/3dgeotermicaone"}>CLICK</Link>
             </div>
 
             <button

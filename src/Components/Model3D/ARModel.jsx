@@ -16,17 +16,17 @@ function ARModel({ values, pathModel }) {
 
   return (
     <div style={{ margin: "0 auto" }}>
-      <a-scene embedded arjs="sourceType: webcam;">
+      <a-scene arjs="sourceType: webcam;">
         <a-marker preset="hiro">
           <a-entity
             position="-1 0 1"
             scale={`${scale} ${scale} ${scale}`}
             // gltf-model={`url(/src/assets/ar/eolica/torre-eolica.gltf)`}
-            gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
+            // gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
             // ref={sceneRef}
             rotation={`${rotate} ${y2} ${z2}`}
           >
-            {/* <a-gltf-model src={pathModel} /> */}
+            <a-gltf-model src={pathModel} />
             {/* <a-sphere color="red" radius="5"></a-sphere> */}
           </a-entity>
         </a-marker>
