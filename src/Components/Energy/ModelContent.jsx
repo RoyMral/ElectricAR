@@ -2,6 +2,7 @@ import { useState } from "react";
 import ModalQr from "./ModalQr";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import QRCode from "qrcode.react";
 
 function ModelContent(props) {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -54,7 +55,10 @@ function ModelContent(props) {
               puedas ver este modelo en tu espacio utilizando realidad
               aumentada.
             </p>
-            <Link to={"/tipogeotermica/3dgeotermicaone"}>CLICK</Link>
+            <Link to={"/tipogeotermica/3dgeotermicaone"}>CLICKKKK</Link>
+            <div>
+              <QRCode value="https://electricar-page.netlify.app//tipogeotermica/3dgeotermicaone" />
+            </div>
 
             <button
               onClick={closeModal}
