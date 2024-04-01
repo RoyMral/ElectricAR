@@ -60,9 +60,9 @@ function ModelContent(props) {
             </p>
 
             <div>
-              <Link to={"/tipogeotermica/3dgeotermicaone"}>
+              <Link to={"/tipoeolica/3deolicaone"}>
                 <QRCode
-                  value={`https://electricar-page.netlify.app/tipogeotermica/3dgeotermicaone`}
+                  value={`https://electricar-page.netlify.app/tipoeolica/3deolicaone`}
                   // onClick={handleQRClick}
                 />
               </Link>
