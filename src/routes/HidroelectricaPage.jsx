@@ -20,7 +20,7 @@ function HidroelectricaPage() {
       <Subtitles title="Represa Hidroeléctrica" />
       <ModelContent
         imageEnergyOne={arImagesHidro[0]}
-        imageEnergyTwo=""
+        imageEnergyTwo={arImagesHidro[4]}
         texto="Fuente: Elaboración propia"
       />
       <Subtitles title="Proceso Energía Hidroeléctrica" />

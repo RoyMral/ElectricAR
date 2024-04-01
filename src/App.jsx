@@ -62,7 +62,7 @@ function App() {
         ></Route>
         {/******************* SOLAR **********************/}
         <Route
-          path="/tiposolar/3dsolarone"
+          path="https://electricar-page.netlify.app/tiposolar/3dsolarone"
           element={
             <ARModel
               values={{ x2: 50, y2: 90, z2: -90, scale: 1 }}
