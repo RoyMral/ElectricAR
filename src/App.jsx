@@ -37,7 +37,8 @@ function App() {
           element={
             <ARModel
               values={{ x2: 60, y2: 90, z2: -90, scale: 0.03 }}
-              pathModel="/src/assets/ar/eolica/eolica2/torre-eolica2.gltf"
+              // pathModel="/src/assets/ar/eolica/eolica2/torre-eolica2.gltf"
+              pathModel="https://raw.githubusercontent.com/RoyMral/AR-Gltf/main/eolica2/torre-eolica2.gltf"
             />
           }
         ></Route>

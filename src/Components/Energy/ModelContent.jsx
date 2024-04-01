@@ -1,7 +1,7 @@
 import { useState } from "react";
 import ModalQr from "./ModalQr";
 import PropTypes from "prop-types";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import QRCode from "qrcode.react";
 
 function ModelContent(props) {
