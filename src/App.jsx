@@ -9,7 +9,7 @@ import GeotermicaPage from "./routes/GeotermicaPage";
 import EolicaPage from "./routes/EolicaPage";
 import SolarPage from "./routes/SolarPage";
 import BiomasaPage from "./routes/BiomasaPage";
-import ARModel from "./Components/Model3D/ARModel";
+// import ARModel from "./Components/Model3D/ARModel";
 
 function App() {
   return (
@@ -32,55 +32,9 @@ function App() {
         <Route path="/tipobiomasa" Component={BiomasaPage}></Route>
         {/* Rutas de Realidad Aumentada */}
         {/******************* EÓLICA **********************/}
-        <Route
-          path="/tipoeolica/3deolicaone"
-          element={
-            <ARModel
-              values={{ x2: 60, y2: 90, z2: -90, scale: 0.03 }}
-              // pathModel="/src/assets/ar/eolica/eolica2/torre-eolica2.gltf"
-              pathModel="https://raw.githubusercontent.com/RoyMral/AR-Gltf/main/eolica2/torre-eolica2.gltf"
-            />
-          }
-        ></Route>
         ****************** GEOTERMICA *********************
-        <Route
-          path="/tipogeotermica/3dgeotermicaone"
-          element={
-            <ARModel
-              values={{ x2: 50, y2: 90, z2: -90, scale: 0.5 }}
-              pathModel="https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
-            />
-          }
-        ></Route>
-        <Route
-          path="/tipogeotermica/3dgeotermicatwo"
-          element={
-            <ARModel
-              values={{ x2: 50, y2: 90, z2: -90, scale: 0.09 }}
-              pathModel="/src/assets/ar/geotermica/geo3/geotermica3.gltf"
-            />
-          }
-        ></Route>
         {/******************* SOLAR **********************/}
-        <Route
-          path="/tiposolar/3dsolarone"
-          element={
-            <ARModel
-              values={{ x2: 50, y2: 90, z2: -90, scale: 1 }}
-              pathModel="/src/assets/ar/solar/solar2/solar2.gltf"
-            />
-          }
-        ></Route>
         {/******************* HIDROELÉCTRICA **********************/}
-        <Route
-          path="/tipohidro/3dhidroone"
-          element={
-            <ARModel
-              values={{ x2: 50, y2: 90, z2: -90, scale: 1 }}
-              pathModel="/src/assets/ar/hidro/scene.gltf"
-            />
-          }
-        ></Route>
       </Routes>
     </>
   );

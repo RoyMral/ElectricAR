@@ -21,6 +21,7 @@ function SolarPage() {
       <ModelContent
         imageEnergyOne={arImagesSolar[0]}
         imageEnergyTwo=""
+        url="https://render-ar.netlify.app/routes/modelsolarone"
         texto="Fuente: Elaboración propia"
       />
       <Subtitles title="Colocación Panel Solar" />

@@ -1,7 +1,6 @@
 import { useState } from "react";
 import ModalQr from "./ModalQr";
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
 import QRCode from "qrcode.react";
 
 function ModelContent(props) {
@@ -40,11 +39,7 @@ function ModelContent(props) {
               Apunta la cámara de tu dispositivo móvil al código QR
             </p>
             <figure>
-              <img
-                src={props.imageEnergyTwo}
-                alt="qr link"
-                className="text-center"
-              />
+              <QRCode value={props.url} />
             </figure>
             <p>
               Luego da click sobre la siguiente{" "}
@@ -58,17 +53,6 @@ function ModelContent(props) {
               puedas ver este modelo en tu espacio utilizando realidad
               aumentada.
             </p>
-
-            <div>
-              <Link to={"/tipoeolica/3deolicaone"}>
-                <QRCode
-                  value={`https://electricar-page.netlify.app/tipoeolica/3deolicaone`}
-                  // onClick={handleQRClick}
-                />
-              </Link>
-              <Link to={"/tipogeotermica/3dgeotermicaone"}>CLICK</Link>
-            </div>
-
             <button
               onClick={closeModal}
               className="px-6 py-2 bg-[#0F4072] text-white hover:bg-[#264967] transition-all"
@@ -85,7 +69,7 @@ function ModelContent(props) {
 ModelContent.propTypes = {
   imageEnergyOne: PropTypes.string.isRequired,
   imageEnergyTwo: PropTypes.string.isRequired,
-
+  url: PropTypes.string.isRequired,
   texto: PropTypes.string,
 };
 

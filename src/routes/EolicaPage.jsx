@@ -21,22 +21,23 @@ function EolicaPage() {
       <Subtitles title="Torre Eólica" />
       <ModelContent
         imageEnergyOne={arImagesEolic[0]}
-        imageEnergyTwo={arImagesEolic[1]}
+        imageEnergyTwo=""
+        url="https://render-ar.netlify.app/routes/modeleolicatwo"
         texto="Fuente: Elaboración propia"
       />
       <Subtitles title="Interior Turbina Eólica" />
-      <EnergyInfoPlus texto={textos.eolicInfoTwo} pathImg={arImagesEolic[2]} />
+      <EnergyInfoPlus texto={textos.eolicInfoTwo} pathImg={arImagesEolic[1]} />
       <Subtitles title="Impactos de la Energía Eólica" />
       <div className="flex w-[66.7%] m-auto">
         <CardData
           title="Socioeconómico"
           text={textos.cardEolicOne}
-          pathImg={arImagesEolic[3]}
+          pathImg={arImagesEolic[2]}
         />
         <CardData
           title="Medioambiental"
           text={textos.cardEolicTwo}
-          pathImg={arImagesEolic[4]}
+          pathImg={arImagesEolic[3]}
         />
       </div>
       <Footer />

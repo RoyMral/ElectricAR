@@ -20,7 +20,8 @@ function HidroelectricaPage() {
       <Subtitles title="Represa Hidroeléctrica" />
       <ModelContent
         imageEnergyOne={arImagesHidro[0]}
-        imageEnergyTwo={arImagesHidro[4]}
+        imageEnergyTwo=""
+        url="https://render-ar.netlify.app/routes/modelhidroone"
         texto="Fuente: Elaboración propia"
       />
       <Subtitles title="Proceso Energía Hidroeléctrica" />

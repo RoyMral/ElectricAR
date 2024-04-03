@@ -20,6 +20,7 @@ function GeotermicaPage() {
       <ModelContent
         imageEnergyOne={arImagesGeotermic[0]}
         imageEnergyTwo=""
+        url="https://render-ar.netlify.app/routes/modelgeotermicaone"
         texto="Fuente: Elaboración propia"
       />
       <Subtitles title="Proceso Geotérmico" />
