@@ -22,7 +22,7 @@ function SolarPage() {
         imageEnergyOne={arImagesSolar[0]}
         imageEnergyTwo=""
         url="https://render-ar.netlify.app/routes/modelsolarone"
-        texto="Fuente: Elaboración propia"
+        texto="Fuente: gobiernodecanarias.org"
       />
       <Subtitles title="Colocación Panel Solar" />
       <EnergyInfoPlus texto={textos.solarInfoTwo} pathImg={arImagesSolar[1]} />
@@ -31,10 +31,10 @@ function SolarPage() {
         imageEnergyOne={arImagesSolar[4]}
         imageEnergyTwo=""
         url="https://render-ar.netlify.app/routes/modelsolartwo"
-        texto="Fuente: Elaboración propia"
+        texto="Fuente: sketchfab.com"
       />
       <Subtitles title="Impacto de la Energía Solar" />
-      <div className="flex w-[66.7%] m-auto">
+      <div className="flex sm:w-[640px] md:w-[768px] lg:w-[1024px] m-auto">
         <CardData
           title="Socioeconómico"
           text={textos.cardSolarOne}

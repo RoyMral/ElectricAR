@@ -1,5 +1,5 @@
 import { defineConfig } from "vite";
-import { readFileSync } from "fs";
+// import { readFileSync } from "fs";
 
 import react from "@vitejs/plugin-react-swc";
 
@@ -7,9 +7,9 @@ import react from "@vitejs/plugin-react-swc";
 export default defineConfig({
   plugins: [react()],
   server: {
-    https: {
-      key: readFileSync("./ssl/key.pem"),
-      cert: readFileSync("./ssl/cert.pem"),
-    },
+    // https: {
+    //   key: readFileSync("./ssl/key.pem"),
+    //   cert: readFileSync("./ssl/cert.pem"),
+    // },
   },
 });

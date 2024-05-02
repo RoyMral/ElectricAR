@@ -23,12 +23,12 @@ function EolicaPage() {
         imageEnergyOne={arImagesEolic[0]}
         imageEnergyTwo=""
         url="https://render-ar.netlify.app/routes/modeleolicatwo"
-        texto="Fuente: Elaboración propia"
+        texto="Fuente: gobiernodecanarias.org"
       />
       <Subtitles title="Interior Turbina Eólica" />
       <EnergyInfoPlus texto={textos.eolicInfoTwo} pathImg={arImagesEolic[1]} />
       <Subtitles title="Impactos de la Energía Eólica" />
-      <div className="flex w-[66.7%] m-auto">
+      <div className="flex sm:w-[640px] md:w-[768px] lg:w-[1024px] m-auto">
         <CardData
           title="Socioeconómico"
           text={textos.cardEolicOne}

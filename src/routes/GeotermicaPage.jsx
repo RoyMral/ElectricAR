@@ -21,19 +21,19 @@ function GeotermicaPage() {
         imageEnergyOne={arImagesGeotermic[0]}
         imageEnergyTwo=""
         url="https://render-ar.netlify.app/routes/modelgeotermicaone"
-        texto="Fuente: Elaboración propia"
+        texto="Fuente: gobiernodecanarias.org"
       />
       <Subtitles title="Proceso Geotérmico" />
       <ModelContent
         imageEnergyOne={arImagesGeotermic[1]}
         imageEnergyTwo=""
-        texto="Fuente: Elaboración propia"
+        texto="Fuente: sketchfab.com"
       />
       <div className="mx-auto sm:w-[640px] md:w-[768px] lg:w-[1024px] text-white bg-[rgba(15,64,114,0.8)] text-lg">
         <p>{textos.geotermicInfoTwo}</p>
       </div>
       <Subtitles title="Impactos de la Energía Geotérmica" />
-      <div className="flex w-[66.7%] m-auto">
+      <div className="flex sm:w-[640px] md:w-[768px] lg:w-[1024px] m-auto">
         <CardData
           title="Socioeconómico"
           text={textos.cardGeotermicOne}

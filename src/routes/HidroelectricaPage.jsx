@@ -22,12 +22,12 @@ function HidroelectricaPage() {
         imageEnergyOne={arImagesHidro[0]}
         imageEnergyTwo=""
         url="https://render-ar.netlify.app/routes/modelhidroone"
-        texto="Fuente: Elaboración propia"
+        texto="Fuente: gobiernodecanarias.org"
       />
       <Subtitles title="Proceso Energía Hidroeléctrica" />
       <EnergyInfoPlus texto={textos.hidroInfoTwo} pathImg={arImagesHidro[1]} />
       <Subtitles title="Impactos de la Energía Hidroeléctrica" />
-      <div className="flex w-[66.7%] m-auto">
+      <div className="flex sm:w-[640px] md:w-[768px] lg:w-[1024px] m-auto">
         <CardData
           title="Socioeconómico"
           text={textos.cardEolicOne}
