@@ -23,11 +23,6 @@ function TypesEnergy() {
           Solar
         </Link>
       </li>
-      <li className="p-2 hover:bg-[#4274a7]">
-        <Link to="/tipobiomasa" className="w-full  hover:cursor-pointer">
-          Biomasa
-        </Link>
-      </li>
     </ul>
   );
 }

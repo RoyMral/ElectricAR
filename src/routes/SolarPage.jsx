@@ -26,6 +26,13 @@ function SolarPage() {
       />
       <Subtitles title="Colocación Panel Solar" />
       <EnergyInfoPlus texto={textos.solarInfoTwo} pathImg={arImagesSolar[1]} />
+      <Subtitles title="Otro Ejemplo de Panel Solar" />
+      <ModelContent
+        imageEnergyOne={arImagesSolar[4]}
+        imageEnergyTwo=""
+        url="https://render-ar.netlify.app/routes/modelsolartwo"
+        texto="Fuente: Elaboración propia"
+      />
       <Subtitles title="Impacto de la Energía Solar" />
       <div className="flex w-[66.7%] m-auto">
         <CardData

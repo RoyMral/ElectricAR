@@ -46,6 +46,8 @@ function ModelContent(props) {
               <a
                 className="font-bold text-2xl text-red-700"
                 href="https://raw.githubusercontent.com/AR-js-org/AR.js/master/data/images/hiro.png"
+                rel="noreferrer"
+                target="_blank"
               >
                 Imagen
               </a>{" "}
