@@ -8,7 +8,7 @@ function VideoContainer({ videoId }) {
         width="768"
         height="420"
         src={`https://www.youtube.com/embed/${videoId}`}
-        title="ENERGÍA HIDRÁULICA💧 ¿Es renovable? ¿Cómo funciona?"
+        title= ""
         allowFullScreen
         // sandbox="allow-same-origin allow-forms allow-popups allow-scripts allow-presentation"
       ></iframe>
